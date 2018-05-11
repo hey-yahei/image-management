@@ -5,17 +5,19 @@
 3. 支持通过搜索描述的方式，以文字来检索图片    
 4. 支持简单的图片管理，添加图片到图库、从图库中移除图片等         
   
-描述生成的模型基于google的im2txt模型；      
-数据集来源于AI Challenger；     
+软件为BS架构，后端使用python-bottle框架；     
+描述生成的模型基于google的im2txt模型，数据集来源于AI Challenger，描述质量不是很高，凑合着玩吧；      
   
 ### 使用说明    
-1. 安装python
+1. 安装python      
 2. 安装python依赖包    
-    ```bash
+    ```
     pip install -r requirement.txt
     ```
-3. 执行server.py文件    
-    ```bash
+3. 下载模型参数文件，将 `model.zip` 解压到 `im2txt` 目录下     
+    `model.zip` 下载地址：https://pan.baidu.com/s/1GafvHRh9dgtzJDyiF3cFgQ           
+4. 执行server.py文件    
+    ```
     python server.py
     ```
-4. 用浏览器访问地址 `localhost:8080`        
+5. 用浏览器访问地址 `localhost:8080`        
