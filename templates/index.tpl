@@ -52,7 +52,7 @@
         <!-- bootstrap栅格系统 -->
         <div class="container">
             <!-- 标题行 -->
-            <div class="row" style="margin-top:3%; margin-bottom: 3%">
+            <div class="row" style="margin-top:2%; margin-bottom: 2%">
                 <div class="text-center">
                     <h1>图片描述与归档</h1>
                 </div>

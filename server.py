@@ -7,6 +7,7 @@ import os
 import jieba
 import json
 from time import time
+import webbrowser
 
 # 参数设置
 CHECKPOINT_PATH = "im2txt/model/model.ckpt-385634"
@@ -144,5 +145,5 @@ def search():
 
     return template("templates/images_area.tpl", images=images)
 
-
+webbrowser.open("http://localhost:8080")
 run(host="localhost", port=8080, debug=True)
