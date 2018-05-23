@@ -22,7 +22,7 @@ from __future__ import print_function
 
 import tensorflow as tf
 
-from tensorflow.contrib.slim.python.slim.nets.inception_v3 import inception_v3_base
+from tensorflow.contrib.slim.python.slim.nets.inception_resnet_v2 import inception_resnet_v2_base
 
 slim = tf.contrib.slim
 
@@ -36,7 +36,7 @@ def inception_v3(images,
                  use_batch_norm=True,
                  batch_norm_params=None,
                  add_summaries=True,
-                 scope="InceptionV3"):
+                 scope="InceptionResnetV2"):
   """Builds an Inception V3 subgraph for image embeddings.
 
   Args:
@@ -84,7 +84,7 @@ def inception_v3(images,
   else:
     weights_regularizer = None
 
-  with tf.variable_scope(scope, "InceptionV3", [images]) as scope:
+  with tf.variable_scope(scope, "InceptionResnetV2", [images]) as scope:
     with slim.arg_scope(
         [slim.conv2d, slim.fully_connected],
         weights_regularizer=weights_regularizer,
@@ -95,7 +95,7 @@ def inception_v3(images,
           activation_fn=tf.nn.relu,
           normalizer_fn=slim.batch_norm,
           normalizer_params=batch_norm_params):
-        net, end_points = inception_v3_base(images, scope=scope)
+        net, end_points = inception_resnet_v2_base(images, scope=scope)
         with tf.variable_scope("logits"):
           shape = net.get_shape()
           net = slim.avg_pool2d(net, shape[1:3], padding="VALID", scope="pool")

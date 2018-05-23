@@ -10,7 +10,7 @@ from time import time
 import webbrowser
 
 # 参数设置
-CHECKPOINT_PATH = "im2txt/model/model.ckpt-385634"
+CHECKPOINT_PATH = "im2txt/model/model.ckpt-536455"
 VOCAB_FILE = "im2txt/model/word_counts.txt"
 IMAGES_DIR = "images/"
 JSON_FILE = IMAGES_DIR + "image_info.json"
