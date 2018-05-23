@@ -21,3 +21,15 @@
     python server.py
     ```
 5. 用浏览器访问地址 `localhost:8080`        
+
+### 应用界面：      
+
+**主界面**：      
+![](https://raw.githubusercontent.com/hey-yahei/image-management/master/demos/demo_main.png)       
+  
+**图片详情**：       
+![](https://raw.githubusercontent.com/hey-yahei/image-management/master/demos/demo_detail.png)       
+  
+**图片搜索**：      
+比如“球”       
+![](https://raw.githubusercontent.com/hey-yahei/image-management/master/demos/demo_search.png)       
