@@ -108,3 +108,6 @@ venv.bak/
 
 # tf_checkpoints
 /im2txt/model/
+
+# images
+images/*
