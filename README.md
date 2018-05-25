@@ -13,13 +13,15 @@
 2. 安装python依赖包    
     ```
     pip install -r requirement.txt
-    ```
+    ```     
+    Windows用户可以直接双击运行`install_all_libs.bat`脚本文件         
 3. 下载模型参数文件，将 `model.zip` 解压到 `im2txt` 目录下     
     `model.zip` 下载地址：https://pan.baidu.com/s/1py7S1X1Hn97K9gk3ZskgKQ       
 4. 执行server.py文件    
     ```
     python server.py
-    ```
+    ```    
+    Windows用户可以直接双击运行`image_management.bat`脚本文件      
 5. 用浏览器访问地址 `localhost:8080`        
 
 ### 应用界面：      
